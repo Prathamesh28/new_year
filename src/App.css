@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+.background {
+  background-image: url('../public/IMG.webp'); /* Add your image to the `public` folder */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-list-container {
+  /* background: rgba(255, 255, 255, 0.9); /* White box with slight transparency */
+  /* border: 2px solid #dcbf91; Matches the gold border from the poster */
+  /* border-radius: 15px; */ 
+  padding: 20px 30px;
+  width: 50%;
+  max-width: 450px;
+  text-align: center;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  margin-top: 60px;
+  color: #b02e24; /* Festive red */
+  font-weight: bold;
+}
+
+.movie-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #e0bc74; /* Neutral text color */
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.movie-list li {
+  margin: 5px 0;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1em;
+  color: #333;
+}
+
+.custom-checkbox input {
+  display: none; /* Hide the default checkbox */
+}
+
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #b02e24; /* Festive red border */
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  background: white;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background: #b02e24; /* Filled red when checked */
+  border-color: #b02e24;
+}
+
+.custom-checkbox .checkmark::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 3px;
+  left: 6px;
+  display: none;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  display: block;
+}
+
+.save-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background-color: #b02e24;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #8a1c1b;
+}

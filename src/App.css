@@ -1,3 +1,4 @@
+/* General body styles */
 body {
   margin: 0;
   padding: 0;
@@ -5,9 +6,10 @@ body {
   background-color: #fff;
 }
 
+/* Main background */
 .background {
-  background-image: url('../public/IMG.webp'); /* Add your image to the `public` folder */
-  /* background-size: cover; */
+  background-image: url('../public/IMG3.jpeg'); /* New background image */
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
@@ -15,58 +17,132 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Container for the movie list */
 .movie-list-container {
-  /* background: rgba(255, 255, 255, 0.9); /* White box with slight transparency */
-  /* border: 2px solid #dcbf91; Matches the gold border from the poster */
-  /* border-radius: 15px; */ 
-  padding: 20px 30px;
-  width: 50%;
-  max-width: 450px;
-  text-align: center;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+  background: rgba(255, 255, 255, 0.85); /* Transparent background */
+  border: 2px solid #e2aaff; /* Pinkish border to match theme */
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%; /* Adjust for responsive design */
+  max-width: 800px; /* Increased max width */
+  text-align: left;
+  font-size: 0.8em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
 }
 
+.corner-image-1 {
+  position: absolute;
+  top: 750px;
+  right: 40%; /* Adjust position as needed */
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+}
+
+.corner-image-2 {
+  position: absolute;
+  top: 730px;
+  right: 20%; /* Adjust position as needed */
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+}
+
+.corner-image-3 {
+  position: absolute;
+  top: 520px;
+  right: 25%; /* Adjust position as needed */
+  width: 130px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+}
+
+.corner-image-4 {
+  position: absolute;
+  top: 385px;
+  left: 12%; /* Adjust position as needed */
+  width: 180px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+}
+
+.corner-image-5 {
+  position: absolute;
+  top: 690px;
+  left: 17%; /* Adjust position as needed */
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+}
+
+.corner-image-6 {
+  position: absolute;
+  top: 320px;
+  left: 37%; /* Adjust position as needed */
+  width: 180px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+}
+
+.corner-image-7 {
+  position: absolute;
+  top: 200px;
+  right: 22%; /* Adjust position as needed */
+  width: 170px; /* Adjust size as needed */
+  height: auto;
+  z-index: 2;
+}
+
+/* Title */
 .title {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin-bottom: 15px;
-  margin-top: 60px;
-  color: #b02e24; /* Festive red */
+  color: #d55b5b; /* Festive red-pink */
   font-weight: bold;
+  text-align: center;
 }
 
-.movie-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  color: #e0bc74; /* Neutral text color */
-  font-size: 1.1em;
-  line-height: 1.5em;
+.title1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #d55b5b; /* Festive red-pink */
+  font-weight: bold;
+  text-align: center;
 }
 
-.movie-list li {
-  margin: 5px 0;
+
+/* Movie list styles */
+.movie-list-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Spacing between items */
 }
 
 .custom-checkbox {
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #333;
+  justify-content: flex-start;
 }
 
 .custom-checkbox input {
-  display: none; /* Hide the default checkbox */
+  display: none; /* Hide default checkbox */
 }
 
 .custom-checkbox .checkmark {
-  width: 10px;
-  height: 10px;
-  border: 2px solid #b02e24; /* Festive red border */
+  width: 14px;
+  min-width: 14px;
+  height: 14px;
+  border: 2px solid #d55b5b; /* Border color */
   border-radius: 4px;
-  margin-right: 7px;
+  margin-right: 10px;
   position: relative;
   display: inline-block;
   background: white;
@@ -74,20 +150,20 @@ body {
 }
 
 .custom-checkbox input:checked + .checkmark {
-  background: #b02e24; /* Filled red when checked */
-  border-color: #b02e24;
+  background: #d55b5b; /* Fill color when checked */
+  border-color: #d55b5b;
 }
 
 .custom-checkbox .checkmark::after {
   content: '';
   position: absolute;
-  width: 5px;
-  height: 8px;
+  width: 6px;
+  height: 10px;
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-  bottom: 1px;
-  left: 2px;
+  top: 0px;
+  left: 3px;
   display: none;
 }
 
@@ -95,13 +171,20 @@ body {
   display: block;
 }
 
+/* Save button styles */
+.save-button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .save-button {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1em;
   font-weight: bold;
   color: white;
-  background-color: #b02e24;
+  background-color: #d55b5b;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -110,100 +193,23 @@ body {
 }
 
 .save-button:hover {
-  background-color: #8a1c1b;
+  background-color: #b04848;
 }
 
+/* Responsive styles */
+@media (max-width: 480px) {
 
-@media (max-width: 768px) {
-  .movie-list-container {
-    padding: 15px 15px;
-    width: 95%; /* Adjust width for smaller screens */
-  }
 
   .title {
-    font-size: 1.5em; /* Smaller title size */
+    font-size: 1.5em;
   }
 
-  .movie-list {
-    font-size: 0.9em; /* Adjust font size */
-  }
-
-  .custom-checkbox .checkmark {
-    width: 18px;
-    height: 18px; /* Slightly smaller checkboxes */
-  }
-
-  .save-button {
-    padding: 10px 18px; /* Smaller padding for button */
+  .custom-checkbox {
     font-size: 0.9em;
   }
-}
-
-@media (max-width: 480px) {
-  .background{
-    background-image: url('../public/IMG2.jpeg'); /* Add your image to the `public` folder */
-    background-size: cover;
-  }
-  .movie-list-container {
-    padding: 10px 10px;
-    width: 80%;
-  }
-
-  .title {
-    font-size: 1em;
-  }
-
-  .movie-list {
-    font-size: 0.8em;
-  }
 
   .save-button {
-    padding: 8px 16px;
-    font-size: 0.8em;
-  }
-  .custom-checkbox {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 0.8em;
-    color: #333;
-  }
-  
-  .custom-checkbox input {
-    display: none; /* Hide the default checkbox */
-  }
-  
-  .custom-checkbox .checkmark {
-    width: 10px;
-    height: 10px;
-    border: 2px solid #b02e24; /* Festive red border */
-    border-radius: 4px;
-    margin-right: 7px;
-    position: relative;
-    display: inline-block;
-    background: white;
-    transition: background 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .custom-checkbox input:checked + .checkmark {
-    background: #b02e24; /* Filled red when checked */
-    border-color: #b02e24;
-  }
-  
-  .custom-checkbox .checkmark::after {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 8px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    bottom: 1px;
-    left: 2px;
-    display: none;
-  }
-  
-  .custom-checkbox input:checked + .checkmark::after {
-    display: block;
+    padding: 10px 18px;
+    font-size: 0.9em;
   }
 }

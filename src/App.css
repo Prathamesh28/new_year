@@ -277,65 +277,65 @@ body {
 
   .corner-image-1 {
     position: absolute;
-    top: 700px;
-    right: 40%; /* Adjust position as needed */
+    top: 720px;
+    right: 10%; /* Adjust position as needed */
     width: 80px; /* Adjust size as needed */
     height: auto;
-    z-index: 2;
+    z-index: 0;
   }
   
   .corner-image-2 {
     position: absolute;
-    top: 530px;
-    right: 20%; /* Adjust position as needed */
-    width: 200px; /* Adjust size as needed */
+    top: 500px;
+    right: 0; /* Adjust position as needed */
+    width: 120px; /* Adjust size as needed */
     height: auto;
-    z-index: 2;
+    z-index: 0;
   }
   
   .corner-image-3 {
     position: absolute;
-    top: 520px;
-    right: 25%; /* Adjust position as needed */
-    width: 130px; /* Adjust size as needed */
+    top: 40px;
+    right: 5%; /* Adjust position as needed */
+    width: 60px; /* Adjust size as needed */
     height: auto;
-    z-index: 2;
+    z-index: 0;
   }
   
   .corner-image-4 {
     position: absolute;
-    top: 385px;
-    left: 12%; /* Adjust position as needed */
-    width: 180px; /* Adjust size as needed */
+    top: 50px;
+    left: 2%; /* Adjust position as needed */
+    width: 110px; /* Adjust size as needed */
     height: auto;
-    z-index: 2;
+    z-index: 0;
   }
   
   .corner-image-5 {
     position: absolute;
-    top: 590px;
-    left: 17%; /* Adjust position as needed */
-    width: 150px; /* Adjust size as needed */
-    height: auto;
-    z-index: 2;
+    top: 330px;
+    left: 0; /* Adjust position as needed */
+    width: 80px; /* Adjust size as needed */
+    height: 200px;
+    z-index: 0;
   }
   
   .corner-image-6 {
     position: absolute;
-    top: 320px;
-    left: 37%; /* Adjust position as needed */
-    width: 180px; /* Adjust size as needed */
+    top: 750px;
+    left: 7%; /* Adjust position as needed */
+    width: 120px; /* Adjust size as needed */
     height: auto;
-    z-index: 2;
+    z-index: 0;
   }
   
   .corner-image-7 {
     position: absolute;
-    top: 200px;
-    right: 22%; /* Adjust position as needed */
-    width: 170px; /* Adjust size as needed */
+    top: 240px;
+    right: 0; /* Adjust position as needed */
+    width: 80px; /* Adjust size as needed */
     height: auto;
-    z-index: 2;
+    z-index: 0;
   }
 
   .save-button {

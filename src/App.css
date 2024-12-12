@@ -315,14 +315,14 @@ body {
     position: absolute;
     top: 330px;
     left: 0; /* Adjust position as needed */
-    width: 80px; /* Adjust size as needed */
-    height: 150px;
+    width: 65px; /* Adjust size as needed */
+    height: 120px;
     z-index: 0;
   }
   
   .corner-image-6 {
     position: absolute;
-    top: 730px;
+    top: 740px;
     left: 0; /* Adjust position as needed */
     width: 90px; /* Adjust size as needed */
     height: auto;

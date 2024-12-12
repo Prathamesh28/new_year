@@ -79,7 +79,7 @@ function App() {
         <img src="./IMG10.png" alt="Decoration" className="corner-image-7" />
 
 
-        <h1 className="title">Ваш контрольный список рождественских фильмов</h1>
+        <h1 className="title">Чек-лист новогодних фильмов</h1>
         <div className="movie-list-columns">
           {movies.map((movie, index) => (
             <label key={index} className="custom-checkbox">

@@ -277,7 +277,7 @@ body {
 
   .corner-image-1 {
     position: absolute;
-    top: 700px;
+    top: 720px;
     right: 10%; /* Adjust position as needed */
     width: 60px; /* Adjust size as needed */
     height: auto;
@@ -322,7 +322,7 @@ body {
   
   .corner-image-6 {
     position: absolute;
-    top: 720px;
+    top: 730px;
     left: 0; /* Adjust position as needed */
     width: 90px; /* Adjust size as needed */
     height: auto;

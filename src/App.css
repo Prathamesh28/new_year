@@ -277,26 +277,26 @@ body {
 
   .corner-image-1 {
     position: absolute;
-    top: 720px;
+    top: 700px;
     right: 10%; /* Adjust position as needed */
-    width: 80px; /* Adjust size as needed */
+    width: 60px; /* Adjust size as needed */
     height: auto;
     z-index: 0;
   }
   
   .corner-image-2 {
     position: absolute;
-    top: 500px;
+    top: 480px;
     right: 0; /* Adjust position as needed */
-    width: 120px; /* Adjust size as needed */
+    width: 100px; /* Adjust size as needed */
     height: auto;
     z-index: 0;
   }
   
   .corner-image-3 {
     position: absolute;
-    top: 40px;
-    right: 5%; /* Adjust position as needed */
+    top: 10px;
+    right: 0; /* Adjust position as needed */
     width: 60px; /* Adjust size as needed */
     height: auto;
     z-index: 0;
@@ -304,9 +304,9 @@ body {
   
   .corner-image-4 {
     position: absolute;
-    top: 50px;
-    left: 2%; /* Adjust position as needed */
-    width: 110px; /* Adjust size as needed */
+    top: 10px;
+    left: 0; /* Adjust position as needed */
+    width: 90px; /* Adjust size as needed */
     height: auto;
     z-index: 0;
   }
@@ -316,24 +316,24 @@ body {
     top: 330px;
     left: 0; /* Adjust position as needed */
     width: 80px; /* Adjust size as needed */
-    height: 200px;
+    height: 150px;
     z-index: 0;
   }
   
   .corner-image-6 {
     position: absolute;
-    top: 750px;
-    left: 7%; /* Adjust position as needed */
-    width: 120px; /* Adjust size as needed */
+    top: 720px;
+    left: 0; /* Adjust position as needed */
+    width: 90px; /* Adjust size as needed */
     height: auto;
     z-index: 0;
   }
   
   .corner-image-7 {
     position: absolute;
-    top: 240px;
+    top: 210px;
     right: 0; /* Adjust position as needed */
-    width: 80px; /* Adjust size as needed */
+    width: 70px; /* Adjust size as needed */
     height: auto;
     z-index: 0;
   }
